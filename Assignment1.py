@@ -2,45 +2,24 @@
 """
 Created on Sat Jan 12 06:52:13 2019
 
-@author: Mamedov
+@author: Mamedova
 """
 #Class Exercises
 import turtle
 
-turtle.pensize(5)
-turtle.color('blue')
-turtle.penup() #to move pen to a new location
-turtle.goto(-110,-25)
-turtle.pendown()
-turtle.circle(45)
-
-turtle.pensize(5)
-turtle.color('black')
-turtle.penup() #to move pen to a new location
-turtle.goto(0,-25)
-turtle.pendown()
-turtle.circle(45)
-
-turtle.pensize(5)
-turtle.color('red')
-turtle.penup() #to move pen to a new location
-turtle.goto(110,-25)
-turtle.pendown()
-turtle.circle(45)
-
-turtle.pensize(5)
-turtle.color('yellow')
-turtle.penup() #to move pen to a new location
-turtle.goto(-55,-75)
-turtle.pendown()
-turtle.circle(45)
-
-turtle.pensize(5)
-turtle.color('green')
-turtle.penup() #to move pen to a new location
-turtle.goto(55,-75)
-turtle.pendown()
-turtle.circle(45)
+def DrawCircle (color, x, y, radius = 45):  #required parameters first, optional(default) parameters (radius) at the end
+    turtle.pensize(5)
+    turtle.color(color)
+    turtle.penup() #to move pen to a new location
+    turtle.goto(x,y)
+    turtle.pendown()
+    turtle.circle(radius)
+    
+DrawCircle('blue',-110,-25)
+DrawCircle('black',0,-25)
+DrawCircle('red',110,-25)
+DrawCircle('yellow',-55,-75)
+DrawCircle('green',55,-75)
 
 #1.1
 print ('Welcome to Python')
@@ -89,3 +68,4 @@ turtle.goto(-100,0)
 turtle.left(90)
 turtle.pendown()
 turtle.forward(200)
+
