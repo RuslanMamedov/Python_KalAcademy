@@ -2,7 +2,7 @@
 """
 Created on Sat Jan 12 06:52:13 2019
 
-@author: Mamedova
+@author: Mamedov
 """
 #Class Exercises
 import turtle
@@ -59,3 +59,33 @@ print ('FF        U      U  NN  N  NN')
 print ('FF         U    U   NN   N NN')
 print ('FF          UUUU    NN    NNN')
 
+
+#1.12
+turtle.pensize (5)
+turtle.color ('green')
+turtle.penup()
+turtle.goto(-100,100)
+turtle.pendown()
+for i in range (0,4):
+    turtle.forward(200)
+    turtle.right(90)
+    
+turtle.penup()
+turtle.goto(0,100)
+turtle.pendown()
+turtle.right(90)
+turtle.forward(200)
+
+turtle.penup()
+turtle.goto(-100,0)
+turtle.left(90)
+turtle.pendown()
+turtle.forward(200)
+
+#1.13
+turtle.color ('blue')
+turtle.penup()
+turtle.goto(-100,0)
+turtle.left(90)
+turtle.pendown()
+turtle.forward(200)
